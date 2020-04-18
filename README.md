@@ -1,21 +1,18 @@
 # Tips-And-Tricks
 
 ## Запустить web-сервер на локальном компьютере
-```
+
 1. Open terminal or cmd and install the `http-server` module globally on your machine
   ```
   npm i -g http-server 
   ```
 3. Run it using CLI (specifying the folder you'd like to serve files from)
-
   ```
   http-server ./[yourfolder] -p 1337
   ```
 4. Now you should be able to access your files (via something like http://localhost:1337/myfile.html) in a web browser.
-```
 
 ## Расшарить локальный порт
-```
 1. Download ngrok: https://dashboard.ngrok.com/get-started/setup
 2. Unzip it:
   ```
@@ -33,4 +30,3 @@
   ```
   ./ngrok tcp 8080
   ```
-```
