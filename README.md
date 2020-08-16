@@ -32,6 +32,3 @@
   ```
 ## Сменить remote у git репозитория:
 https://help.github.com/en/github/using-git/changing-a-remotes-url
-
-## Работа с несколькими remote у git репозитория
-https://help.github.com/en/github/using-git/changing-a-remotes-url
