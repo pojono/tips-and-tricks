@@ -32,3 +32,8 @@
   ```
 ## Сменить remote у git репозитория:
 https://help.github.com/en/github/using-git/changing-a-remotes-url
+
+## Узнать какая папка занимает место на жестком диске:
+```
+sudo du -sm * | sort -n
+```
