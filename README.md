@@ -41,5 +41,10 @@ sudo du -sm * | sort -n
 ## Исправить ID в базе Postgres (например таблица quiz)
 
 SELECT MAX(id) FROM quiz;
+
 select (SELECT MAX(id) FROM quiz) + 1;
+
 SELECT pg_catalog.setval(pg_get_serial_sequence('quiz', 'id'),(SELECT MAX(id) FROM quiz) + 1);
+
+## Разрешить авторизацию паролем
+https://serverpilot.io/docs/how-to-enable-ssh-password-authentication/
