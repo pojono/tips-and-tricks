@@ -48,3 +48,7 @@ SELECT pg_catalog.setval(pg_get_serial_sequence('quiz', 'id'),(SELECT MAX(id) FR
 
 ## Разрешить авторизацию паролем
 https://serverpilot.io/docs/how-to-enable-ssh-password-authentication/
+
+## Сделать zip архив из папки
+
+zip -r data.zip ./data/
