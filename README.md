@@ -52,3 +52,11 @@ https://serverpilot.io/docs/how-to-enable-ssh-password-authentication/
 ## Сделать zip архив из папки
 
 zip -r data.zip ./data/
+
+## Распаковать zip архив
+
+unzip data.zip -d ./destination-folder
+
+## Скачать файл с удаленного сервера
+
+scp -i ~/key.pem USER@HOST:/remote-path/data.zip ~/local-path/
