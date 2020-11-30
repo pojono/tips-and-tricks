@@ -60,3 +60,15 @@ unzip data.zip -d ./destination-folder
 ## Скачать файл с удаленного сервера
 
 scp -i ~/key.pem USER@HOST:/remote-path/data.zip ~/local-path/
+
+## Настройка jenkins
+docker exec -it jenkins bash;
+adduser jenkins docker;
+exit;
+docker exec -u jenkins -it jenkins bash;
+aws configure;
+aws ecr get-login-password \
+    --region eu-west-1 \
+| docker login \
+    --username AWS \
+    --password-stdin ACCOUNT_ID.dkr.ecr.eu-west-1.amazonaws.com
