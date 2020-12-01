@@ -72,3 +72,8 @@ aws ecr get-login-password \
 | docker login \
     --username AWS \
     --password-stdin ACCOUNT_ID.dkr.ecr.eu-west-1.amazonaws.com
+
+## Распознавание добавленного объема жесткого диска
+growpart /dev/vda 2
+
+resize2fs /dev/vda2
