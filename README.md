@@ -61,6 +61,13 @@ unzip data.zip -d ./destination-folder
 
 scp -i ~/key.pem USER@HOST:/remote-path/data.zip ~/local-path/
 
+## Установка AWS CLI 2
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+unzip awscliv2.zip
+
+sudo ./aws/install
+
 ## Настройка jenkins
 docker exec -it jenkins bash;
 adduser jenkins docker;
