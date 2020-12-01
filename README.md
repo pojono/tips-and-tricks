@@ -88,3 +88,6 @@ $ sudo apt install ansible
 ## Установка sshpass
 
 $ apt-get install sshpass
+
+## Настройка python для ansible
+sudo ln -s /usr/bin/python3 /usr/bin/python
