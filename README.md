@@ -77,3 +77,10 @@ aws ecr get-login-password \
 growpart /dev/vda 2
 
 resize2fs /dev/vda2
+
+## Установка ansible-playbook
+
+$ sudo apt update
+$ sudo apt install software-properties-common
+$ sudo apt-add-repository --yes --update ppa:ansible/ansible
+$ sudo apt install ansible
