@@ -53,6 +53,10 @@ https://serverpilot.io/docs/how-to-enable-ssh-password-authentication/
 
 zip -r data.zip ./data/
 
+## Сделать zip архив из папки, исключая определенные папки
+
+zip -r data.zip data -x "data/ignoreDir1/*" "data/ignoreDir2/*"
+
 ## Распаковать zip архив
 
 unzip data.zip -d ./destination-folder
