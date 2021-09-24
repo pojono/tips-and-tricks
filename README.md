@@ -65,6 +65,10 @@ unzip data.zip -d ./destination-folder
 
 scp -i ~/key.pem USER@HOST:/remote-path/data.zip ~/local-path/
 
+## Save docker logs to file
+
+docker logs -f <yourContainer> &> your.log &
+
 ## Установка AWS CLI 2
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 
