@@ -106,3 +106,7 @@ $ apt-get install sshpass
 
 ## Настройка python для ansible
 sudo ln -s /usr/bin/python3 /usr/bin/python
+
+## Подключение по SSH без ввода пароля:
+  1. Один раз сгенерировать ключ: https://git-scm.com/book/ru/v2/Git-на-сервере-Генерация-открытого-SSH-ключа
+  2. Выполнить команду: ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
