@@ -109,4 +109,14 @@ sudo ln -s /usr/bin/python3 /usr/bin/python
 
 ## Подключение по SSH без ввода пароля:
   1. Один раз сгенерировать ключ: https://git-scm.com/book/ru/v2/Git-на-сервере-Генерация-открытого-SSH-ключа
-  2. Выполнить команду: ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
+  2. Выполнить команду: 
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
+  
+## Диагностика подключения к БД
+
+  docker run --name mypg -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres:11
+
+  docker exec -it mypg bash
+
+  while true; do pg_isready -d <DATABASE_NAME> -h <HOST> -p <PORT> -U <USERNAME>;date ; sleep 5; done
+
