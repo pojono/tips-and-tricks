@@ -130,6 +130,12 @@ sudo groupadd docker
   
 sudo usermod -aG docker $USER
 
-sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/2.1.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
   
 sudo chmod +x /usr/local/bin/docker-compose
+  
+## Install Brew for Mac M1
+  
+arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+alias brew="arch -x86_64 brew"
