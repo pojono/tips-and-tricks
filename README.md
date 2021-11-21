@@ -139,3 +139,9 @@ sudo chmod +x /usr/local/bin/docker-compose
 arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 alias brew="arch -x86_64 brew"
+
+## Check ports on MacOS
+  
+  sudo lsof -iTCP -sTCP:LISTEN -n -P
+  
+  ps -eaf | grep `lsof -t -i:7000`
