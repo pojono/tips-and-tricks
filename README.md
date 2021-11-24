@@ -145,3 +145,7 @@ alias brew="arch -x86_64 brew"
   sudo lsof -iTCP -sTCP:LISTEN -n -P
   
   ps -eaf | grep `lsof -t -i:7000`
+
+## Stop and remove Docker containers
+  
+docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
