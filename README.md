@@ -89,6 +89,8 @@ aws ecr get-login-password \
     --password-stdin ACCOUNT_ID.dkr.ecr.eu-west-1.amazonaws.com
 
 ## Распознавание добавленного объема жесткого диска
+https://linuxhint.com/increase-disk-space-ec2/
+  
 growpart /dev/vda 2
 
 resize2fs /dev/vda2
